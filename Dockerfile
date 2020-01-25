@@ -6,5 +6,6 @@ RUN apt-get update && apt-get -y dist-upgrade
 
 # Configure Services and Port
 COPY start.sh /start.sh
-CMD ["./start.sh"]
+RUN  chomd +x /start.sh
+CMD ["/start.sh"]
 
