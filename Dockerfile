@@ -6,6 +6,6 @@ MAINTAINER ffdixon@bigbluebutton.org
 
 # Configure Services and Port
 COPY start.sh /start.sh
-RUN  chomd +x /start.sh
+RUN  chmod +x /start.sh
 CMD ["/start.sh"]
 
